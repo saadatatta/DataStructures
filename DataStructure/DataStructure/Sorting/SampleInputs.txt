@@ -1,0 +1,28 @@
+﻿
+
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] array = new int[] { 10,80,30,90,40,50,70};
+        int[] array1 = new int[] { 1,4,1,2,7,5,2 };
+        int[] array2 = new int[] { 170, 45, 75, 90, 802, 24, 2, 66 };
+
+        Sorting sorting = new Sorting(array2);
+        //sorting.SelectionSort();
+        //sorting.InsertionSort();
+        //sorting.BubbleSort();
+        //sorting.QuickSort(0, array.Length - 1);
+        //sorting.MergeSort(0, array.Length - 1);
+        //sorting.HeapSort();
+        //sorting.CountingSort();
+        //sorting.RadixSort();
+        sorting.ShellSort();
+        sorting.Print();
+        
+    }
+}
+

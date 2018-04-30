@@ -1,0 +1,68 @@
+﻿using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Node node1 = new Node(3);
+        Node node2 = new Node(6);
+        Node node3 = new Node(15);
+        Node node4 = new Node(15);
+        Node node5 = new Node(30);
+        Node node6 = new Node(10);
+        Node node7 = new Node(15);
+        Node node8 = new Node(30);
+        Node node9 = new Node(21);
+
+        LinkedList linkedList = new LinkedList(node1);
+        LinkedList linkedList2 = new LinkedList(node6);
+
+        linkedList.head.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node5;
+
+        node6.next = node7;
+        node7.next = node8;
+        node8.next = node9;
+
+        linkedList.PrintList();
+        linkedList2.PrintList();
+
+        Console.WriteLine("Intersecting node is : " + linkedList.FindIntersectingNode(linkedList.head,linkedList2.head));
+        //Console.WriteLine("Palindrome :" +linkedList.IsPalindrome());
+        //linkedList.SwapNodes(46, 32);
+        // Console.WriteLine("Middle node is : " + linkedList.FindMiddleNode().data);
+        //Console.WriteLine("Nth node is : " + linkedList.GetNthNode(linkedList.head,1).data);
+        //Console.WriteLine("Nth node from last is : " + linkedList.GetNthNodeFromLast(4).data);
+        //linkedList.DeleteList();
+        //linkedList.ReverseList();
+        //Console.WriteLine("Loop detected : " + linkedList.LoopDetect());
+
+        //linkedList.Push(21);
+        //linkedList.InsertAfter(node2, 45);
+        //linkedList.Append(6);
+        //linkedList.Delete(7);
+        //linkedList.DeleteAtPosition(4);
+        //linkedList.Length();
+        //bool isPresent = linkedList.Search(linkedList.head,46);
+        //Console.WriteLine("Value is " + isPresent);
+
+        //Merge two sorted linked lists
+        //LinkedList linkedList1 = new LinkedList(node6);
+        //linkedList1.head.next = node7;
+        //node7.next = node8;
+        //node8.next = node9;
+        //Node current = linkedList.MergeTwoSortedlistsRecursive(linkedList.head, linkedList1.head);
+
+        //while(current != null)
+        // {
+        //     Console.Write(current.data + "  " + "---->" + "  ");
+        //     current = current.next;
+        // }
+
+        linkedList.PrintList();
+
+    }
+}
+
